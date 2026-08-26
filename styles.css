@@ -1,2 +1,33 @@
 
 /* Your CSS Code here. */
+
+.holder {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.item {
+    width: 120px;
+    height: 120px;
+    flex-shrink: 0;
+    font-size: 55px;
+}
+
+.item:nth-child(1) {
+    background-color: red;
+    order: 6;
+}
+
+.item:nth-child(2) {
+    background-color: blue;
+    order: 7;
+}
+
+.item:nth-child(3),
+.item:nth-child(4),
+.item:nth-child(5),
+.item:nth-child(6),
+.item:nth-child(7) {
+    background-color: green;
+}
